@@ -11,11 +11,6 @@ public class CustomerService {
     private final CustomerRepository customerRepository;
     private final RestTemplate restTemplate;
 
-    public CustomerService(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-        customerRepository = null;
-    }
-
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
                 .firstName(request.firstName())
