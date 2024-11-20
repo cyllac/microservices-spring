@@ -1,4 +1,4 @@
-package com.cyllac.fraud;
+package com.cyllac.customer;
 
 public record FraudCheckResponse(Boolean isFraudster) {
 }
